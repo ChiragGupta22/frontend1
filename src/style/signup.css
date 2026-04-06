@@ -1,0 +1,153 @@
+body {
+  overflow-y: hidden;
+}
+.sign {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-glass {
+  width: 380px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+}
+
+.signup-glass h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.signup-glass p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #00c6ff;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 114, 255, 0.4);
+}
+
+.signup-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bottom-text {
+  margin-top: 18px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.bottom-text span {
+  color: #00eaff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bottom-text span:hover {
+  text-decoration: underline;
+}
+
+p[style*="red"] {
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .signup-glass {
+    width: 90%;
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .signup-glass h1 {
+    font-size: 24px;
+  }
+
+  .signup-glass p {
+    font-size: 13px;
+  }
+
+  .field input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .signup-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .bottom-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .signup-glass {
+    width: 420px;
+    padding: 26px;
+  }
+
+  .signup-glass h1 {
+    font-size: 26px;
+  }
+
+  .signup-btn {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .signup-glass {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .signup-glass {
+    width: 390px;
+  }
+}
