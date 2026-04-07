@@ -13,7 +13,7 @@ export default function Logout() {
     const logoutUser = async () => {
       try {
         await api.post("/auth/logout");
-        setUser(null); // 🔥 IMPORTANT FIX
+        setUser(null);
       } catch (error) {
         console.error(error);
       }

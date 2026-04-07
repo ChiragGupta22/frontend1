@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/signup.css";
 import api from "../lib/axios";
-export default function Signup2() {
+export default function Signup() {
   const [userdata, setUserdata] = useState({
     username: "",
     email: "",
