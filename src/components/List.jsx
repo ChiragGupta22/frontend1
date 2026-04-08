@@ -29,13 +29,13 @@ export default function List() {
     getListdata();
   }, [location.state]);
 
-  useEffect(() => {
-    const getUser = async () => {
-      const res = await api.get("/auth/me");
-      setUser(res.data.user);
-    };
-    getUser();
-  });
+  // useEffect(() => {
+  //   const getUser = async () => {
+  //     const res = await api.get("/auth/me");
+  //     setUser(res.data.user);
+  //   };
+  //   getUser();
+  // });
 
   const deleteTask = async (id) => {
     try {
