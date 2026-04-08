@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
       const res = await api.get("/auth/me");
       console.log(res);
 
-      setUser(res.data.user);
+      setUser(res.data.user || null);
     } catch (error) {
       setUser(null);
     } finally {
