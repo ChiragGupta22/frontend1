@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../lib/axios";
 import "../style/login.css";
-import { AuthContext } from "../services/AuthProvider";
+// import { AuthContext } from "../services/AuthProvider";
 
 export default function Login() {
   const [userdata, setUserdata] = useState({
@@ -12,7 +12,7 @@ export default function Login() {
   const [error, setError] = useState("");
 
   const navigate = useNavigate();
-  const { fetchUser } = useContext(AuthContext);
+  // const { fetchUser } = useContext(AuthContext);
 
   const handleLogin = async (e) => {
     try {
@@ -22,8 +22,6 @@ export default function Login() {
         email: userdata.email,
         password: userdata.password,
       });
-
-      await fetchUser();
 
       navigate("/Addtask");
     } catch (error) {
