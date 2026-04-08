@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://todofull-bjrz.onrender.com/api/:path*"
+      "destination": "https://backend1-2-v9c2.onrender.com/api/:path*"
     }
   ]
 }
